@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {FlatList, View, StyleSheet, Button} from 'react-native'
+import {FlatList, View, StyleSheet, TouchableOpacity} from 'react-native'
 import {ListItem} from 'react-native-elements'
 import NumericInput from 'rn-numeric-input'
 import {FAB} from 'react-native-paper'
@@ -48,9 +48,10 @@ const HomeScreen = () => {
 
   React.useEffect(()=>{
     navigation.setOptions({headerRight:()=>(
-      <Button title='Reset' onPress={resetPlayers}/>
-    )})
-  })
+      <TouchableOpacity style={{padding:10, alignItems:'center', backgroundColor:'white'}} onPress={resetPlayers}>
+        <Text style={{color:'#007AFF', fontSize:18}}>Reset</Text>
+      </TouchableOpacity>
+  )})})
 
   return (
     <View style={styles.container}>
