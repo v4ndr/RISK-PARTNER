@@ -57,8 +57,8 @@ const HomeScreen = () => {
       <ListItem style={styles.item} bottomDivider>
         <ListItem.Content style={styles.title}>
           <ListItem.Title style={{flex:2, textAlign:'left'}}>Joueur</ListItem.Title>
-          <ListItem.Title style={{flex:1.5, textAlign:'left'}}>Armées</ListItem.Title>
-          <ListItem.Title style={{flex:0.8, textAlign:'left'}}>Pays</ListItem.Title>
+          <ListItem.Title style={{flex:1, marginHorizontal:10, textAlign:'center'}}>Armées</ListItem.Title>
+          <ListItem.Title style={{flex:1, marginHorizontal:10, textAlign:'center'}}>Pays</ListItem.Title>
         </ListItem.Content>
       </ListItem>
       <FlatList
